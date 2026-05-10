@@ -1,11 +1,17 @@
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
 
 /* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    background: #3a91b4;
-    background: -webkit-linear-gradient(149deg, rgba(58, 145, 180, 1) 0%, rgba(67, 97, 187, 1) 27%, rgba(148, 29, 253, 1) 58%, rgba(227, 91, 141, 1) 100%);
-    background: -moz-linear-gradient(149deg, rgba(58, 145, 180, 1) 0%, rgba(67, 97, 187, 1) 27%, rgba(148, 29, 253, 1) 58%, rgba(227, 91, 141, 1) 100%);
-    background: linear-gradient(149deg, rgba(58, 145, 180, 1) 0%, rgba(67, 97, 187, 1) 27%, rgba(148, 29, 253, 1) 58%, rgba(227, 91, 141, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3A91B4", endColorstr="#E35B8D", GradientType=0);
+  margin: 0;
+  min-height: 100vh;
+  background: #3a91b4;
+  background: -webkit-linear-gradient(149deg, rgba(58, 145, 180, 1) 0%, rgba(67, 97, 187, 1) 27%, rgba(148, 29, 253, 1) 58%, rgba(227, 91, 141, 1) 100%);
+  background: -moz-linear-gradient(149deg, rgba(58, 145, 180, 1) 0%, rgba(67, 97, 187, 1) 27%, rgba(148, 29, 253, 1) 58%, rgba(227, 91, 141, 1) 100%);
+  background: linear-gradient(149deg, rgba(58, 145, 180, 1) 0%, rgba(67, 97, 187, 1) 27%, rgba(148, 29, 253, 1) 58%, rgba(227, 91, 141, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3A91B4", endColorstr="#E35B8D", GradientType=0);
 }
 
