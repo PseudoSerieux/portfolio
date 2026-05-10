@@ -2,7 +2,6 @@
   <div class="content">
     <h1>Margaux Dechaud</h1>
     <h2>Développeuse Full Stack</h2>
-    <p>Lorem ipsum</p>
     <!-- TODO: 
     - Ajouter photo de profil
     - Ajouter nombre d'années d'expériences
@@ -16,7 +15,24 @@
         https://claude.ai/public/artifacts/68d83523-d808-43c3-846e-5b2965c53545
         https://www.figma.com/make/VD9ZTJ9jolIyOTWE4p7KWJ/Portfolio-single-page?p=f&t=2C5v9hayS0dob06T-0
     -->
+    <p-card header="💼 Années d'expérience" styleClass="home-card home-card-xp">
+        <p id="xp"><strong>7 ans</strong></p>
 
+    </p-card>
+
+    <p-card header="🎓 Diplômes & Certifications" styleClass="home-card home-card-diplomes">
+        <p id="diplomes">• <strong>Master d'Experte Ingénieure Informatique</strong></p>
+        <p id="diplomes">• <strong> PSM I (en cours d'acquisition)</strong></p>
+    </p-card>
+
+    <p-card header="✍️ CV & Contact" styleClass="home-card home-card-cv">
+        <p-button label="📄 Voir mon CV" icon="pi" class="cv-button"></p-button> <!-- TODO : Add cv pdf & fonctionnalité ouverture cv-->
+        <p-button label="🔗 Contactez-moi" icon="pi" class="p-button-rounded p-button-primary contact-button" (click)="scrollToContact()"></p-button>
+    </p-card>
+
+    <div> 
+        <br/>
+    </div>
   </div>
 </main>
 

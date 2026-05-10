@@ -1,1 +1,72 @@
 /* Styles inherited from global styles.scss */
+.home-card {
+  background: linear-gradient(135deg, rgba(58, 145, 180, 0.12) 0%, rgba(184, 123, 237, 0.12) 100%);
+  border: 1px solid rgba(184, 123, 237, 0.25);
+  box-shadow: 0 4px 20px rgba(67, 97, 187, 0.15);
+  width: 20%;
+  position: relative;
+  margin-top: 3% !important;
+  left: -6%;
+}
+
+.home-card-xp {
+  width: 25%;
+  margin-top: -30%;
+  margin-left: 13%;
+}
+
+.home-card-diplomes {
+  width: 30%;
+  margin-top: -17.3% !important;
+  margin-left: 42%;
+}
+
+.home-card-cv {
+  margin-top: -17.5% !important;
+  margin-left: 76%;
+}
+
+#xp {
+  font-size: 2rem;
+  color: #3a91b4;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+#diplomes {
+  font-size: 1.1rem;
+  color: #3a91b4;
+  margin-bottom: 0.5rem;
+}
+
+/* Button styling for PrimeNG */
+.cv-button ::ng-deep .p-button,
+.contact-button ::ng-deep .p-button {
+  width: 100%;
+  background-color: #3a91b4 !important;
+  border-color: #3a91b4 !important;
+  color: white !important;
+}
+
+.cv-button ::ng-deep .p-button:hover,
+.contact-button ::ng-deep .p-button:hover {
+  background-color: #2a7a94 !important;
+  border-color: #2a7a94 !important;
+}
+
+.cv-button ::ng-deep .p-button:active,
+.contact-button ::ng-deep .p-button:active {
+  background-color: #1a5a74 !important;
+  border-color: #1a5a74 !important;
+}
+
+.cv-button ::ng-deep .p-button-label,
+.contact-button ::ng-deep .p-button-label {
+  color: white !important;
+}
+
+p-button {
+  display: block;
+  margin: 0.5rem auto;
+}
+

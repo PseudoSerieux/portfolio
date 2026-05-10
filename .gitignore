@@ -9,7 +9,7 @@
 
 # Node modules and dependency files
 /node_modules/
-portfolio/package-lock.json
+package-lock.json
 /yarn.lock
 
 # Environment files
