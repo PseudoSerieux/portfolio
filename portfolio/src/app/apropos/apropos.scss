@@ -1,1 +1,50 @@
-/* Styles inherited from global styles.scss */
+.a-propos-fieldset {
+  width: 100%;
+  margin: auto;
+}
+
+::ng-deep .a-propos-fieldset .p-fieldset-legend {
+  font-size: 2rem !important;
+  margin-left: 43% !important;
+}
+
+::ng-deep .hobbys-fieldset .p-fieldset-legend {
+  font-size: 1.3rem !important;
+  margin-left: 45% !important;
+}
+
+.hobbys-fieldset ::ng-deep .p-fieldset-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 1rem;
+}
+
+.about-card {
+  background: linear-gradient(135deg, rgba(58, 145, 180, 0.12) 0%, rgba(184, 123, 237, 0.12) 100%);
+  border: 1px solid rgba(184, 123, 237, 0.25);
+  box-shadow: 0 4px 20px rgba(67, 97, 187, 0.15);
+  width: 220px;
+  min-width: 180px;
+  margin: 0;
+}
+
+.about-card p {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.about-card-astro,
+.about-card-rando,
+.about-card-games,
+.about-card-couture {
+  margin: 0;
+  top: auto;
+  left: auto;
+}
+
+#astro-icon, #rando-icon, #games-icon, #couture-icon {
+    font-size: 3rem;
+}
