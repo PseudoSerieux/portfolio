@@ -1,50 +1,94 @@
-.a-propos-fieldset {
-  width: 100%;
-  margin: auto;
+.apropos {
+  padding: 2rem 1rem;
 }
 
-::ng-deep .a-propos-fieldset .p-fieldset-legend {
-  font-size: 2rem !important;
-  margin-left: 43% !important;
+// Centrage propre de la légende PrimeNG
+::ng-deep .about-fieldset {
+  .p-fieldset-legend {
+    font-size: 1.8rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.04em;
+    // Centrage sans margin-left fixe :
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    position: relative !important;
+  }
+
+  // Respiration du contenu
+  .p-fieldset-content {
+    padding: 1.5rem 2rem !important;
+  }
 }
 
-::ng-deep .hobbys-fieldset .p-fieldset-legend {
-  font-size: 1.3rem !important;
-  margin-left: 45% !important;
+::ng-deep .hobbys-fieldset {
+  margin-top: 1.5rem; // remplace le <br/>
+
+  .p-fieldset-legend {
+    font-size: 1.1rem !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    position: relative !important;
+  }
+
+  .p-fieldset-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 1rem !important;
+  }
 }
 
-.hobbys-fieldset ::ng-deep .p-fieldset-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
-  padding-top: 1rem;
+// Texte de présentation
+.about-text {
+  font-size: 1rem;
+  line-height: 1.8;       // respiration entre les lignes
+  color: #2d2d2d;
+  max-width: 100ch;        // longueur de ligne confortable à lire
+  margin: 0 auto;         // centré dans l'encart
+  margin-top: -3%;
+
+  p {
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 1%;
+    }
+  }
+
+  strong {
+    color: #4361bb;       // bleu de ton gradient, cohérent
+    font-weight: 600;
+  }
 }
 
+// Cards hobbys
 .about-card {
-  background: linear-gradient(135deg, rgba(58, 145, 180, 0.12) 0%, rgba(184, 123, 237, 0.12) 100%);
+  background: linear-gradient(135deg, rgba(58, 145, 180, 0.10) 0%, rgba(184, 123, 237, 0.10) 100%);
   border: 1px solid rgba(184, 123, 237, 0.25);
-  box-shadow: 0 4px 20px rgba(67, 97, 187, 0.15);
-  width: 220px;
-  min-width: 180px;
-  margin: 0;
-}
+  box-shadow: 0 4px 20px rgba(67, 97, 187, 0.12);
+  width: 180px;
+  min-width: 120px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 
-.about-card p {
-  margin: 0;
-  padding: 1rem;
-  text-align: center;
-}
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(67, 97, 187, 0.22);
+  }
 
-.about-card-astro,
-.about-card-rando,
-.about-card-games,
-.about-card-couture {
-  margin: 0;
-  top: auto;
-  left: auto;
-}
+  p {
+    margin: 0;
+    text-align: center;
 
-#astro-icon, #rando-icon, #games-icon, #couture-icon {
-    font-size: 3rem;
+    &:first-child {          // l'emoji
+      font-size: 2.5rem;
+      padding: 0.75rem 0 0.75rem;
+    }
+
+    &:last-child {           // le label
+      font-size: 0.85rem;
+      color: #4361bb;
+      padding-bottom: 0.75rem;
+    }
+  }
 }
